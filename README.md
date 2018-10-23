@@ -59,6 +59,8 @@ One can use :
 mpirun -np (amount_of_ppn) yourjob.py    
 ```
 
+Or using PBS as shown in MNIST_run``` MNIST_run ```
+
 
 ## save/restore
 
