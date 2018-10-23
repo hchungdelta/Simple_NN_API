@@ -15,7 +15,30 @@ Training_Model.add(ML.Layer.FCL_layer.xW_b([4*7*7,49]))
 Training_Model.add(ML.Layer.Acti_layer.Tanh())
 Training_Model.add(ML.Layer.FCL_layer.xW_b([49,10]))
 ```
- 
+
+check accuracy using validation data when finishing one loop.
+
+```
+Accuracy of validation data : 0.808
+Accuracy of validation data : 0.851
+Accuracy of validation data : 0.873
+Accuracy of validation data : 0.893
+Accuracy of validation data : 0.904
+Accuracy of validation data : 0.925
+Accuracy of validation data : 0.930
+Accuracy of validation data : 0.930
+Accuracy of validation data : 0.946
+Accuracy of validation data : 0.952
+```
+
+check accuracy using training data during training.
+
+```
+target: [0 9 3 0 3 1 5 2 5 3 0 4 3 5 5 6 8 7 3 8 6 9 1 0 7 5 1 3 1 9 5 0]
+output: [0 9 3 0 3 1 5 2 5 3 0 4 3 5 5 6 8 7 8 8 6 9 1 0 7 5 1 3 1 9 5 0]
+Accuracy of trainin data : 0.969
+```
+
 
 
 # Environment :
