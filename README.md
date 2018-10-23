@@ -26,7 +26,7 @@ Training_Model.add(ML.Layer.FCL_layer.xW_b([49,10]))
 
 # Descriptions
 
-## v1.0
+## MNIST example
 
 - main.py : The place to build neural network structure.
 - mnist_data_loader.py : to load MNIST handwritten digits.
