@@ -1,0 +1,18 @@
+#!/bin/bash
+#PBS -N job                        
+#PBS -o out
+#PBS -e err
+#PBS -q ibm     
+#PBS -l nodes=1:ppn=6 
+cd $PBS_O_WORKDIR
+echo '======================================================='
+echo "Starting on `hostname` at `date`"
+echo Working directory is $PBS_O_WORKDIR
+
+alias python="python3"
+echo 'This job started on: ' `date`
+
+mpirun  -np 6 python -u    main.py  >  log
+echo '======================================================='
+echo "Job Ended at `date`"
+echo '======================================================='
