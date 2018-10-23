@@ -33,7 +33,7 @@ Training_Model.add(ML.Layer.FCL_layer.xW_b([49,10]))
 
 - (file) ML : Neural network structure.
 
-Currently support:
+## Currently support:
 
 #### Layer:
 
@@ -45,7 +45,7 @@ Currently support:
 
 #### others:
 
-3.Dropout mechanisms
+Dropout mechanisms
 
 
 ## parallel computing
