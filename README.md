@@ -30,7 +30,7 @@ Training_Model.add(ML.Layer.FCL_layer.xW_b([49,10]))
 
 - main.py : The place to build neural network structure.
 - mnist_data_loader.py : to load MNIST handwritten digits.
-
+- MNIST_run : to submit computing job. 
 - (file) ML : Neural network structure.
 
 ## Currently support:
@@ -52,14 +52,14 @@ Dropout mechanisms
 
 "batchsize"-wise parallel computing is supported in this code. (Using mpi4py) 
 
-In MNIST example, TrainModel.py (in ML/TrainModel/TrainModel.py) will try to import mpi4py and performs parallel computing if available.  
+In MNIST example, TrainModel.py (in ML/TrainModel/TrainModel.py) will try to import mpi4py and performs parallel computing if available. 
 
-MNIST_run : to submit computing job. 
-
-or just :
+One can use :
 ```
 mpirun -np (amount_of_ppn) yourjob.py    
 ```
+
+
 ## save/restore
 
  Data can be saved/restored using "pickle"
