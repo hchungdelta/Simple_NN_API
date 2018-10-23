@@ -55,9 +55,11 @@ Dropout mechanisms
 In MNIST example, TrainModel.py (in ML/TrainModel/TrainModel.py) will try to import mpi4py and performs parallel computing if available.  
 
 MNIST_run : to submit computing job. 
-or just :
-mpirun -np (amount_of_ppn) yourjob.py    
 
+or just :
+```
+mpirun -np (amount_of_ppn) yourjob.py    
+```
 ## save/restore
 
  Data can be saved/restored using "pickle"
