@@ -92,7 +92,7 @@ Or using PBS as shown in MNIST_run``` MNIST_run ```
 ```
 #Save
 savepath = 'data/trainable_vars.pickle'
-Training_Model=ML.TrainModel.Model(lr=0.100)  
+Training_Model = ML.TrainModel.Model(lr=0.100)  
 ......(some code)......
 Training_Model.Save(savepath)
 ```
