@@ -20,6 +20,6 @@ Hence we need to contstruct/define a dictionary first.
 Many vocabulary-separated mechanisms have been developed such as [mecab](http://taku910.github.io/mecab/), which can reach high accuracy in parsing sentence. However, here I want to try an idea, *is human-like grammar analysis to be necessary?*
 
 ## Statistical method:
-![sss](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
+![sss](https://github.com/hchungdelta/Simple_NN_API/tree/master/NN_v2.0_seq2seq/introduction/define_vocabulary/dict_record.png)
 
 
