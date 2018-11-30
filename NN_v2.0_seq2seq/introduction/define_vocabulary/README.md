@@ -21,6 +21,31 @@ Many vocabulary-separated mechanisms have been developed such as [mecab](http://
 
 ## Statistical method:
 
+This is a naive idea for vocabulary-searching. Aspiring by the fundamental idea of word2vec, I write a code to record the frequency of each candidate vocabulary, if a combination of individual characters to be of high frequency, it is likely to be a defined vocabulary. In practice : 
+
 <img src="dict_record.gif" width="450">
 
 <img src="dict_record2.gif" width="450">
+
+
+200MB txt novel data are used for vocabulary-searching, I set the upper limit of the vocabulary length to be 7. and if the frequency of certain combination is larger than 120, it will be registered in dictionary.
+
+It is necessary to delete "duplicate information", for example, it is easy to imagine that in this method the dictionary will register the following vocabulary.
+```
+オフィス  (like office)  --> true vocabulary
+フィス    (like   fice)  --> false vocabulary
+ィス      (like    ice)  --> false vocabulary
+```
+
+However, This can be easily solved by check the frequency, since characters are coupled together, so they share a similar frequency. 
+The idea is as follows.
+```
+if word2 in word1:   # word2 is a sub-vocabulary of word1
+    if tolerant_rate1*frequency(word2) > frequency(word1) > tolerant_rate2*frequency(word2):
+        expr(word2_replace_word1)
+# tolerant_rate1 = 1.1
+# tolerant_rate2 = 0.9
+```
+In this case, オフィス will replace the フィス and ィス.
+
+
