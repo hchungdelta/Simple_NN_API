@@ -3,11 +3,11 @@ Personal neural network API from scratch. Only using numpy.
 
 Example code:
 ```
-Training_Model=ML.TrainModel.Model(lr=0.100)
-Training_Model.add(ML.Layer.CNN_layer.CNN_layer( ( 2,1,28,28),paddling=True , kernel_size=(2,2),stride=(1,1),activation="None"))
+Training_Model = ML.TrainModel.Model(lr=0.100)
+Training_Model.add(ML.Layer.CNN_layer.CNN_layer((2, 1, 28, 28), paddling=True, kernel_size=(2, 2),stride=(1, 1),activation="None"))
 Training_Model.add(ML.Layer.Acti_layer.Tanh(upperlimit=1,smooth=10))
 Training_Model.add(ML.Layer.CNN_layer.max_pooling())
-Training_Model.add(ML.Layer.CNN_layer.CNN_layer( ( 4,2,14,14),paddling=True, kernel_size=(2,2),stride=(1,1),activation="None"))
+Training_Model.add(ML.Layer.CNN_layer.CNN_layer((4, 2, 14, 14), paddling=True, kernel_size=(2, 2),stride=(1, 1),activation="None"))
 Training_Model.add(ML.Layer.Acti_layer.Tanh(upperlimit=1,smooth=10))
 Training_Model.add(ML.Layer.CNN_layer.max_pooling())
 Training_Model.add(ML.Layer.CNN_layer.flatten())
