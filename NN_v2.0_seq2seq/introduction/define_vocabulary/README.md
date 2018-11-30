@@ -21,7 +21,6 @@ Many vocabulary-separated mechanisms have been developed such as [mecab](http://
 
 ## Statistical method:
 
-![ssss](https://github.com/hchungdelta/Simple_NN_API/tree/master/NN_v2.0_seq2seq/introduction/define_vocabulary/dict_record.gif) 
+<img src="dict_record.gif" width="450">
 
-<img src="https://github.com/hchungdelta/Simple_NN_API/tree/master/NN_v2.0_seq2seq/introduction/define_vocabulary/dict_record.gif" width="448">
-
+<img src="dict_record2.gif" width="450">
