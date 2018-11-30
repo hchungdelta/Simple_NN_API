@@ -12,7 +12,10 @@ If we write this sentence In English vein, it would look like:
 ```
 日本語:-私-は-オフィス-へ-行った-けど、誰-も-いなかった
 ```
- 
+
+In English, the most straightforward approach to construct an dictionary is to one-hot the vocabulary, and then construct a word embedding based on it for later usage.  (of course, there are some problems inherited in English, many new mechanisms are suggested to overcome these issue such as [Character-based method](https://arxiv.org/abs/1511.04586).)
+
+It indicates that the vocabulary cannot be easily distinguished from a sentence without a basic understanding of the Japanese language.
 
 
 
