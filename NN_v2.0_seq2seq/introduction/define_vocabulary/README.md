@@ -16,6 +16,10 @@ If we write this sentence In English vein, it would look like:
 In English, the most straightforward approach to construct an dictionary is to one-hot the vocabulary, and then construct a word embedding based on it for later usage.  (of course, there are some problems inherited in English, many new mechanisms are suggested to overcome these issue such as [Character-based method](https://arxiv.org/abs/1511.04586).)
 
 It indicates that the vocabulary cannot be easily distinguished from a sentence without a basic understanding of the Japanese language.
+Hence we need to contstruct/define a dictionary first.
+Many vocabulary-separated mechanisms have been developed such as [mecab](http://taku910.github.io/mecab/), which can reach high accuracy in parsing sentence. However, here I want to try an idea, *is human-like grammar analysis to be necessary?*
 
+## Statistical method:
+![sss](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
 
 
