@@ -1,44 +1,17 @@
 import numpy as np 
 import time
 
-def ThreeD_onehot(idx,depth):
+def ThreeD_onehot(idx, depth):
     """
     for input with shape (timestep x batch x depth )
     """
-    output_onehot =  np.zeros((idx.shape[0],idx.shape[1],depth))
+    output_onehot =  np.zeros((idx.shape[0], idx.shape[1], depth))
     for timestep in range(len(idx)):
         for batch in range(len(idx[0])):
             max_idx=idx[timestep][batch]
             output_onehot[timestep][batch][max_idx]=1
 
-    return output_onehot 
-def input_randomer(low,high,batch,vocab_size,maxlength):
-    """
-    add 1 as <EOS> token
-    add o as <PAD> token
-    """
-    length_for_each_batch=np.random.randint(low=low,high=high,size=batch)
-    output = []
-    for idx,this_length in enumerate (length_for_each_batch) :
-        output.append(np.random.randint(low=2,high=vocab_size, size=this_length).tolist() )
-        length_for_each_batch[idx]+=1
-    for this_output in output :
-        this_output.append(1)
-        while len(this_output) < maxlength:
-            this_output.append(0)
-    return output, length_for_each_batch
-def input_helper(input_data,vocab_size):
-    """
-    helper for input_randomer
-    output as onehot with shape ( timestep, batch, depth)
-    """
-
-    arrayize = np.array(input_data)
-    change_shape = np.transpose(arrayize,(1,0))
-    output = ThreeD_onehot(change_shape,vocab_size)
-    return output
-
-
+    return output_onehot
 class Sigmoid():
     def __init__(self,smooth=1):
         self.smooth = smooth
