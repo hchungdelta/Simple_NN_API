@@ -1,4 +1,4 @@
-# Simple_NN_API
+# Simple_NN_API V 1.0
 Personal neural network API from scratch. Only using numpy.
 
 Example code:
