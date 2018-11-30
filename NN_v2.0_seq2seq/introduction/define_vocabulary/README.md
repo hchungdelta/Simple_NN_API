@@ -30,6 +30,12 @@ This is a naive idea for vocabulary-searching. Aspiring by the fundamental idea 
 
 200MB txt novel data are used for vocabulary-searching, I set the upper limit of the vocabulary length to be 7. and if the frequency of certain combination is larger than 120, it will be registered in dictionary.
 
+There are three issues arise in this method. 
+* duplicate information
+* lengthy words
+* postpositional particle　格助詞「て、に、を、は、が」
+
+#### duplicate information
 It is necessary to delete "duplicate information", for example, it is easy to imagine that in this method the dictionary will register the following vocabulary.
 ```
 オフィス  (like office)  --> true vocabulary
@@ -48,4 +54,4 @@ if word2 in word1:   # word2 is a sub-vocabulary of word1
 ```
 In this case, オフィス will replace the フィス and ィス.
 
-
+#### lengthy words
