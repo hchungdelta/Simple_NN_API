@@ -1,11 +1,10 @@
-#import sys
 import numpy as np
 import time
 import MNIST_data_loader as MNIST_load
 import ML  
-comm=ML.TrainModel.comm
-rank=ML.TrainModel.rank
-size=ML.TrainModel.size
+comm = ML.TrainModel.comm
+rank = ML.TrainModel.rank
+size = ML.TrainModel.size
 '''
 mpi4py:
 comm = parallel computing commander  /None if MPI not exist
@@ -17,18 +16,18 @@ size = amount of processors          /1    if MPI not exist
 training_data, validation_data, test_data = MNIST_load.load_data()
 
 # record the cost of time
-start=time.time()
+start = time.time()
 
 # save path for trainable variables 
 savepath = 'data/trainable_vars.pickle'
 
 # Build up neural network architecture for all processors  
 # note that the initial weights/bias are different for each processor
-Training_Model=ML.TrainModel.Model(lr=0.100)
-Training_Model.add(ML.Layer.CNN_layer.CNN_layer( ( 2,1,28,28),paddling=True , kernel_size=(2,2),stride=(1,1),activation="None"))
+Training_Model = ML.TrainModel.Model(lr=0.100)
+Training_Model.add(ML.Layer.CNN_layer.CNN_layer((2, 1, 28, 28),paddling=True , kernel_size=(2,2),stride=(1,1),activation="None"))
 Training_Model.add(ML.Layer.Acti_layer.Tanh(upperlimit=1,smooth=10))
 Training_Model.add(ML.Layer.CNN_layer.max_pooling())
-Training_Model.add(ML.Layer.CNN_layer.CNN_layer( ( 4,2,14,14),paddling=True, kernel_size=(2,2),stride=(1,1),activation="None"))
+Training_Model.add(ML.Layer.CNN_layer.CNN_layer((4, 2, 14, 14),paddling=True, kernel_size=(2,2),stride=(1,1),activation="None"))
 Training_Model.add(ML.Layer.Acti_layer.Tanh(upperlimit=1,smooth=10))
 Training_Model.add(ML.Layer.CNN_layer.max_pooling())
 Training_Model.add(ML.Layer.CNN_layer.flatten())
