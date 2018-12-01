@@ -153,9 +153,9 @@ for a in range(int(100001/SIZE)):
         PRED = np.argmax(pred, axis=2)
         INPUT = np.argmax(batchinput, axis=2)
         DEINPUT = np.argmax(batch_decode_input, axis=2)
+        PRED = PRED.transpose(1, 0)
         INPUT = INPUT.transpose(1, 0)
         DEINPUT = DEINPUT.transpose(1, 0)
-        PRED = PRED.transpose(1, 0)
         for number in range(3):
             print(number)
             print(INPUT[number])
