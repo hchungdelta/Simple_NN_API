@@ -101,7 +101,7 @@ for a in range(int(100001/SIZE)):
     target = batchtarget
     # forward propagation
 
-    # pass w2v before entering LSTM
+    # pass Word2Vec before entering LSTM
     wordvector = Embedding_matrix.select(batchinput)
 
     # return (h_list, c_list, final_h_state, final_c_state)
