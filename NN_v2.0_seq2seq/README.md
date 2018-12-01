@@ -51,7 +51,7 @@ Extracting character-specific conversations from all conversations
 
 ## training model
 
-An embarrassingly parallel are implemented automatically in this API (if available).
+An embarrassingly parallel computing is implemented automatically in this API (if available).
 The detail is illustrated in [ML/TrainModel](https://github.com/hchungdelta/Simple_NN_API/tree/master/NN_v2.0_seq2seq/ML/TrainModel)
 
 
