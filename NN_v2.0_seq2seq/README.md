@@ -46,5 +46,16 @@ Extracting character-specific conversations from all conversations
 
 
 
+## LSTM mechanism
+
+
+## training model
+
+An embarrassingly parallel are implemented automatically in this API (if available).
+In short, 
+each processor uses the same weight and bias at each step, while using different data to train them. (e.g. processor1 uses data batch 1-32, processor2 uses bata batch 33-64 ...etc.) And latter sum up the dW and db from each processor for updating.
+
+
+
 
 
