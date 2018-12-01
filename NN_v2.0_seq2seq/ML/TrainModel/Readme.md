@@ -18,7 +18,15 @@ EndeModel.add(linearlayer)
 
 EndeModel.Update_all(mode="adam") # adopt adam optimizer
 ```
-#### 2. Embarrassing parallel computing
+
+#### 2. Save and restore in pickle
+```
+# usage
+EndeModel.Save('data_path.pickle')
+EndeModel.Restore('data_path.pickle')
+```
+
+#### 3. Embarrassing parallel computing
 
 If parallel computing is available, the model will broadcast the same initial weights/bias to all processors at the beginning.
 ```
@@ -28,14 +36,12 @@ if EndeModel.comm != None :
 ```
 And also, one must make sure the training data are separated to each processor correctly, as  in ```seq2seq.py```.
 At the end of each training step, ask the model to update all parameters.
+
 ```
 EndeModel.Update_all(mode="adam") # adopt adam optimizer
 ```
 
+The following illustrates the process of training with parallel computing.
+<img src="parallel_comput.gif" width="800">
 
-#### 3. Save and restore in pickle
-```
-# usage
-EndeModel.Save('data_path.pickle')
-EndeModel.Restore('data_path.pickle')
-```
+
