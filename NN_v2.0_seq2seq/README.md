@@ -16,11 +16,11 @@ LSTM sequence encoder-decoder model in numpy.
 
 ## training data:
 training data source: [小説家になろう](https://syosetu.com/)
-#### conversation training data: 
+*  conversation training data: 
 1. 80,000 sentences (specific character conversation: younger sister(妹属性))
 2. 660,000 sentences (specific character conversation: general)
 
-#### word2vec training data (Using genism):
+* word2vec training data (Using genism):
 1. 200 MB txt data  
 
 ## computation cost:
