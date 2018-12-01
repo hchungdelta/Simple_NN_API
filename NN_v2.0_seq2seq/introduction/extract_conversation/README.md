@@ -11,4 +11,13 @@ It is common to imagine that if two sentences appear in a row in the novel, it i
 The following is an example of this approach:
 
 
-<img src=".gif" width="850">
+
+<img src="sample_extract.gif" width="920">
+
+
+
+In the example, two conversations are extracted (green and orange underlines), by rearranging the conversation, they can now serve as seq2seq training data.  As what follows.
+
+
+
+<img src="convsation.gif" width="760">
