@@ -11,4 +11,4 @@ It is common to imagine that if two sentences appear in a row in the novel, it i
 The following is an example of this approach:
 
 
-
+<img src=".gif" width="850">
