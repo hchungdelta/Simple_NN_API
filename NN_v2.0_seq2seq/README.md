@@ -29,11 +29,11 @@ LSTM sequence encoder-decoder model in numpy.
 
 ## data preparing
 1. dictionary: words simple statistical method. 
-[dictionary searching](https://github.com/hchungdelta/Simple_NN_API/tree/master/NN_v2.0_seq2seq/introduction/define_vocabulary) 
+[introduction/define_vocabulary](https://github.com/hchungdelta/Simple_NN_API/tree/master/NN_v2.0_seq2seq/introduction/define_vocabulary) 
 
 
-2. sentence:
-Extracting the conversation from novels (From website : 小説家になろう).
+2. training data (conversation).
+Extracting the conversation from novels (source: [小説家になろう](https://syosetu.com/)).
 In many circumstances, two sentences may not be related. For example:
 
 
