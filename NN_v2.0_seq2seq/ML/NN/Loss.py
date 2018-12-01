@@ -11,7 +11,7 @@ def square_loss(input_data, target):
 
 def softmax_cross_entropy(input_data, target):
     '''
-    return L, dL
+    return softmax(input_data), L, dL
     '''
     after_softmax = []
     batch = target.shape[0]
@@ -26,10 +26,6 @@ def softmax_cross_entropy(input_data, target):
     L = -np.sum(np.multiply(target, np.log(pred+small_num)))/batch
     # calculation of dL
     All_dLoss = -target + pred
-    # for single_data in range(batch) :
-    #     dLoss = -target[single_data] +pred[single_data]
-    #     All_dLoss.append(dLoss)
-    # All_dLoss= np.array(All_dLoss)
     return pred, L, All_dLoss
 
 def cross_entropy(target, prediction):
