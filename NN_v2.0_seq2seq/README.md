@@ -24,7 +24,7 @@ training data source: [小説家になろう](https://syosetu.com/)
 1. 200 MB txt data  
 
 ## computation cost:
-1 CPU, 1 week training.
+* 1 CPU, 1 week training.
 
 # Project:
 
