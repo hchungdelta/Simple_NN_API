@@ -30,16 +30,12 @@ training data source: [小説家になろう](https://syosetu.com/)
 
 ## data preparing
 1. dictionary: words simple statistical method. 
-[introduction/define_vocabulary](https://github.com/hchungdelta/Simple_NN_API/tree/master/NN_v2.0_seq2seq/introduction/define_vocabulary) 
+[see introduction/define_vocabulary](https://github.com/hchungdelta/Simple_NN_API/tree/master/NN_v2.0_seq2seq/introduction/define_vocabulary) 
 
 
 2. training data (conversation).
 Extracting the conversation from novels (source: [小説家になろう](https://syosetu.com/)).
-In many circumstances, two sentences may not be related. For example:
-
-
-Solution : set up a threshold for "Word distance" between sentences in the novel.
-
+[see introduction/extract_conversation](https://github.com/hchungdelta/Simple_NN_API/tree/master/NN_v2.0_seq2seq/introduction/extract_conversation)
 
 
 
