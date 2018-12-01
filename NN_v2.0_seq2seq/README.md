@@ -55,6 +55,8 @@ An embarrassingly parallel computing is implemented automatically in this API (i
 The detail is illustrated in [ML/TrainModel](https://github.com/hchungdelta/Simple_NN_API/tree/master/NN_v2.0_seq2seq/ML/TrainModel)
 
 
+## pre-trained data
 
+The size of .pickle is too large (450 MB). 
 
 
