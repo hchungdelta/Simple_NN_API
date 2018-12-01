@@ -62,7 +62,7 @@ The idea is as follows.
 ```
 if subword1, subword2 in word:   
     if  frequency(subword1)*frequency(subword2) > threshold*frequency(word)  
-    expr(omit word from dictionary)
+        expr(omit word from dictionary)
 # threshold = 3 #chosen empirically. 
 ```
 
