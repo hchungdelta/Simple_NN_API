@@ -1,4 +1,4 @@
-# Extract characters specific conversation
+# Extract character specific conversation
 In the Japanese language, one intriguing thing is that some words can explicitly indicate the person's gender, personalities, characteristics, even though there is no masculine and feminine noun system in the Japanese language system (as in Spanish language ...etc.) 
 
 In English, if one want to mention his of herself, just use "I".
