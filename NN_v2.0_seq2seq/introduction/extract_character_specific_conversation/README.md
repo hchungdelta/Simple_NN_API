@@ -16,7 +16,7 @@ However, in the Japanese language, there are many words can be used as "I" depen
 
 In my opinions, the Japanese language can serve as a fruitful, and fascinating field for the speaker-recognition system, which can further imporve the character-specific seq2seq model. 
 
-In this project, I want to train my model to have a certain characteristic (Yes, frankly speak, younger-sister-like-characteristic).  While due to lack of personal embedding data, I adopt a short-term palliative. As aforementioned, the identities are explicitly indicated by certain words, so I only need to use the conversations with certain keywords in it and also omit those conversations involve banned words in reply, as following shows.
+In this project, I want to train my model to have a certain characteristic (Yes, frankly speak, younger-sister-like-characteristic).  While due to lack of personal embedding data, I adopt a short-term palliative. As aforementioned, the identities are explicitly indicated by certain words, so I only need to use the conversations with certain keywords in them (also, omit some conversations involve banned words in reply), as following shows.
 
 ```
 conversation = [[question],[reply]]  # e.g. question:ありがとう！　reply:どういたしまして。 
