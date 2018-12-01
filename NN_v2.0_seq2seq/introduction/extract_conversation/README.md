@@ -38,7 +38,7 @@ B:「お役にたてれば、幸いと思います！」           A：「あり
 ```
 
 
-20 dictionary units*: I use dictionary units here since the upper limit length of sentences is somewhat ambiguous in my model.
+20 dictionary units*: I use dictionary units here since the upper limit length of sentence is somewhat ambiguous in my model.
 In extreme case, 6 characters can be encoded into 1 dictionary unit.   
 For example: ありがとう。is equals to ありがとう + 。 and hence is only 2 units.
 
