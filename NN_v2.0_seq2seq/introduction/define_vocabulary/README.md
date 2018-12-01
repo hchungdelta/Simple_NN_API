@@ -31,9 +31,9 @@ This is a naive idea for vocabulary-searching. Aspiring by the fundamental idea 
 200MB txt novel data from ([小説家になろう](https://syosetu.com/)) are used for vocabulary-searching, I set the upper limit of the vocabulary length to be 7. If the frequency of certain combination is larger than 120, it will be registered in dictionary.
 
 There are three issues arise in this method. 
-* duplicate information
-* lengthy vocabularys
-* postpositional particle　格助詞「て、に、を、は、が」
+* Duplicate information
+* Lengthy vocabularies
+* Postpositional particle　格助詞「て、に、を、は、が」
 
 #### Duplicate information
 It is necessary to delete "duplicate information", for example, it is easy to imagine that in this method the dictionary will register the following vocabulary.
@@ -54,9 +54,9 @@ if subword in word:   # word2 is a sub-vocabulary of word1
 ```
 In this case, オフィス will replace フィス and ィス.
 
-#### Lengthy vocabularys
+#### Lengthy vocabularies
 
-Lengthy vocabularys are also a problem since it carries a plethora of information, for example "オフィスへ行った" can be viewed as a vocabulary if the appearance of this sentence is quite often. It had better to be separated the sentence into オフィス+へ+行った. One way to solve this problem is to check the frequency of the sub-vocabularies appear in the lengthy vocabulary (オフィス,行った in this case). If the frequencies of sub-vocabularies are much higher than the lengthy vocabulary, it will be omitted from the dictionary.
+Lengthy vocabularies are also a problem since it carries a plethora of information, for example "オフィスへ行った" can be viewed as a vocabulary if the appearance of this sentence is quite often. It had better to be separated the sentence into オフィス+へ+行った. One way to solve this problem is to check the frequency of the sub-vocabularies appear in the lengthy vocabulary (オフィス,行った in this case). If the frequencies of sub-vocabularies are much higher than the lengthy vocabulary, it will be omitted from the dictionary.
 
 The idea is as follows.
 ```
@@ -74,7 +74,7 @@ The results are as follow. After this approach, the amount of vocabulary is redu
 #### Postpositional particle　格助詞「て、に、を、は、が」
 
 I haven't delved into solving this problem since I expect this problem can only be solved by using much larger data (>> GB).
-Since we can see many vocabularies are in the form of "Noun + postpositional particle." We can check the frequency of "Noun," and the then compare to those of "Noun + postpositional particle." One can expect the amount of the root word "Noun" can overwhelm the branch words with postpositional particle followed by. This will serve as one of my future works once I enter the GB-scale data realm.
+Since we can see many vocabularies are in the form of "Noun + postpositional particle" as shown in the above figure (right). We can check the frequency of "Noun," and the then compare to those of "Noun + postpositional particle." One can expect the amount of the root word "Noun" can overwhelm the branch words with postpositional particle followed by. This will serve as one of my future works once I enter the GB-scale data realm.
 
 Nonetheless, after solving the first two problems, and the amount of vocabulary has been reduced to less than 25% (150k to 40k). It provides an affordable calculational cost for a normal CPU node.
 Of course, the word2vec similiarity check result is quite reasonable (using genism)
