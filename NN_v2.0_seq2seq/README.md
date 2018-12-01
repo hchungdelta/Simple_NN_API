@@ -34,8 +34,7 @@ training data source: [小説家になろう](https://syosetu.com/)
 
 
 2. training data (conversation).
-Extracting the conversation from novels (source: [小説家になろう](https://syosetu.com/)).
-[see introduction/extract_conversation](https://github.com/hchungdelta/Simple_NN_API/tree/master/NN_v2.0_seq2seq/introduction/extract_conversation)
+Extracting the conversation from novels[see introduction/extract_conversation](https://github.com/hchungdelta/Simple_NN_API/tree/master/NN_v2.0_seq2seq/introduction/extract_conversation)
 
 
 
