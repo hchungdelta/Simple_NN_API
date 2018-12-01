@@ -28,7 +28,7 @@ This is a naive idea for vocabulary-searching. Aspiring by the fundamental idea 
 <img src="dict_record2.gif" width="450">
 
 
-200MB txt novel data from ([小説家になろう](https://syosetu.com/)) are used for vocabulary-searching, I set the upper limit of the vocabulary length to be 7. and if the frequency of certain combination is larger than 120, it will be registered in dictionary.
+200MB txt novel data from ([小説家になろう](https://syosetu.com/)) are used for vocabulary-searching, I set the upper limit of the vocabulary length to be 7. If the frequency of certain combination is larger than 120, it will be registered in dictionary.
 
 There are three issues arise in this method. 
 * duplicate information
