@@ -29,12 +29,7 @@ LSTM sequence encoder-decoder model in numpy.
 
 ## data preparing
 1. dictionary: words simple statistical method. 
-
-delete duplicate words:
-
-Since in statistial 
-
-[mecab](http://taku910.github.io/mecab/) 
+[dictionary searching](https://github.com/hchungdelta/Simple_NN_API/tree/master/NN_v2.0_seq2seq/introduction/define_vocabulary) 
 
 
 2. sentence:
