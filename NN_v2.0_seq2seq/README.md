@@ -21,7 +21,7 @@ training data source: [小説家になろう](https://syosetu.com/)
 2. 660,000 sentences (specific character conversation: general)
 
 #### word2vec training data (Using genism):
-Word2Vec training data: 200 MB data  
+1. 200 MB txt data  
 
 ## computation cost:
 1 CPU, 1 week training.
