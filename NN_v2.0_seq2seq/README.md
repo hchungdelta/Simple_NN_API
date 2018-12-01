@@ -30,14 +30,19 @@ training data source: [小説家になろう](https://syosetu.com/)
 
 ## data preparing
 1. dictionary: words simple statistical method. 
+
 [see introduction/define_vocabulary](https://github.com/hchungdelta/Simple_NN_API/tree/master/NN_v2.0_seq2seq/introduction/define_vocabulary) 
 
 
 2. training data : conversations from novel.
-Extracting the conversations from novels  [see introduction/extract_conversation](https://github.com/hchungdelta/Simple_NN_API/tree/master/NN_v2.0_seq2seq/introduction/extract_conversation)
+Extracting the conversations from novels  
+
+[see introduction/extract_conversation](https://github.com/hchungdelta/Simple_NN_API/tree/master/NN_v2.0_seq2seq/introduction/extract_conversation)
 
 3. character-specific conversation: 
-Extracting character-specific conversations from all conversations  [see introduction/extract_conversation](https://github.com/hchungdelta/Simple_NN_API/tree/master/NN_v2.0_seq2seq/introduction/extract_conversation)
+Extracting character-specific conversations from all conversations  
+
+[see introduction/extract_character_specific_conversation](https://github.com/hchungdelta/Simple_NN_API/tree/master/NN_v2.0_seq2seq/introduction/extract_character_specific_conversation)
 
 
 
