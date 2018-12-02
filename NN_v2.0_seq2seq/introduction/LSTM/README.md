@@ -16,12 +16,16 @@ The code of LSTM mechanism can be found in [ML/Layer/LSTM_layer.py](https://gith
 
 ## Backward propagation:
 
-First, the last equation in forward propagation ht.  
+
+First, to derive the last equation in forward propagation (ht).
 
 <img src="LSTM3.gif" width="780">
 
+Based on the previous result, we move on to derive the second last equation in forward propagation (ct).
 
 <img src="LSTMadd.gif" width="230">
+
+dct is 
 
 <img src="LSTM4.gif" width="310">
 
