@@ -35,7 +35,7 @@ training data source: [小説家になろう](https://syosetu.com/)
 # Project:
 
 ## data preparing
-1. dictionary: words simple statistical method. 
+1. dictionary: statistical method. 
 
 [see introduction/define_vocabulary](https://github.com/hchungdelta/Simple_NN_API/tree/master/NN_v2.0_seq2seq/introduction/define_vocabulary) 
 
