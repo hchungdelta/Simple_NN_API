@@ -2,7 +2,7 @@
 
 LSTM sequence encoder-decoder model in numpy.
 
-## environment :
+## environment:
 * Python 3.5
 * Numpy 1.14
 * numba 0.39.0
@@ -26,7 +26,7 @@ training data source: [小説家になろう](https://syosetu.com/)
 ## computation cost:
 * 1 CPU, 1 week training.
 
-## result :
+## result:
 
 <img src="result/result3.gif" width="333">
 <img src="result/result2.gif" width="285">
@@ -51,7 +51,7 @@ Extracting character-specific conversations from all conversations
 [see introduction/extract_character_specific_conversation](https://github.com/hchungdelta/Simple_NN_API/tree/master/NN_v2.0_seq2seq/introduction/extract_character_specific_conversation)
 
 
-## Neural network
+## neural network
 1. LSTM mechansim
 [see introduction/LSTM](https://github.com/hchungdelta/Simple_NN_API/tree/master/NN_v2.0_seq2seq/introduction/LSTM)
 
