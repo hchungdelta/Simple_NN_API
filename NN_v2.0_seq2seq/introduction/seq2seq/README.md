@@ -16,10 +16,9 @@ Two mode are supported in this API, gifs are provided below for better visualize
 * **teacher forcing mode**: using decoder input to help train the model. 
 * **infer mode**: without decoder input, predicting the next word by previous output.
 
-## Teacher forcing mode
 
 <img src="teacherforingmode.gif" width="800">
 
-## Infer mode
+
 
 <img src="infermode.gif" width="800">
