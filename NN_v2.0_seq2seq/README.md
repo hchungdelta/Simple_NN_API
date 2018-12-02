@@ -59,6 +59,6 @@ The detail is illustrated in [ML/TrainModel](https://github.com/hchungdelta/Simp
 
 ## pre-trained data
 
-The size of .pickle is too large (450 MB). 
-
+Due to the size limitation of Github, I store the pre-trained data on [google cloud](https://drive.google.com/open?id=1xCA30CqdKjfHIyVLCjmaZb0brawvWJ43). 
+Just to create a new directory named "data" in this directory, and download the pre-trained data to this "data" directory.  
 
