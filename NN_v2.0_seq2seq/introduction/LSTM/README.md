@@ -21,12 +21,14 @@ First, to derive the last equation in forward propagation (ht).
 
 <img src="LSTM3.gif" width="780">
 
-Based on the previous result, we move on to derive the second last equation in forward propagation (ct).
+Based on the previous result, we move on to derive the second last equation in forward propagation (ct). 
 
 <img src="LSTMadd.gif" width="230">
 
-dct is 
+To update weights, biases, and also the loss. Here I only show the forget gate part since the other three equations can be derived in the similar way.
 
 <img src="LSTM4.gif" width="310">
+
+Sum up the losses, and send to previous LSTM layer (and embedding input).
 
 <img src="LSTM5.gif" width="660">
