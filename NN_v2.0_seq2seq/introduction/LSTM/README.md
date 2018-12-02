@@ -15,3 +15,9 @@ The code of LSTM mechanism can be found in [ML/Layer/LSTM_layer.py](https://gith
 
 
 ## Backward propagation:
+
+<img src="LSTM3.gif" width="780">
+
+<img src="LSTM4.gif" width="310">
+
+<img src="LSTM5.gif" width="660">
