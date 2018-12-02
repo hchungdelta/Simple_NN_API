@@ -31,6 +31,7 @@ training data source: [小説家になろう](https://syosetu.com/)
 <img src="result/result3.gif" width="333">
 <img src="result/result2.gif" width="285">
 <img src="result/result1.gif" width="312">
+
 # Project:
 
 ## data preparing
