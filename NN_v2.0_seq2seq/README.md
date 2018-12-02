@@ -9,9 +9,9 @@ LSTM sequence encoder-decoder model in numpy.
 * (optional) mpi4py
 
 ## .py file:
-* data_importer.py: subsidiary code, for inputing dictionary, data, and some functions.
-* seq2seq.py: training mode. (due to privacy issue, training data isn't uploaded.)
-* tester.py: interactive test mode. (Infer mode)
+* **seq2seq.py**: training mode. (due to privacy issue, training data isn't uploaded.)
+* **tester.py**: interactive test mode. (Infer mode)
+* **data_importer.py**: subsidiary code, for inputing dictionary, data, and some functions.
 #### nomenclature are descripted in sub-directory "ML"
 
 ## training data:
