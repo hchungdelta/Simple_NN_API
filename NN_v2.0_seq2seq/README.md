@@ -47,8 +47,7 @@ Extracting character-specific conversations from all conversations
 
 ## Neural network
 1. LSTM mechansim
-[see introduction/LSTM]
-(https://github.com/hchungdelta/Simple_NN_API/tree/master/NN_v2.0_seq2seq/introduction/LSTM)
+[see introduction/LSTM](https://github.com/hchungdelta/Simple_NN_API/tree/master/NN_v2.0_seq2seq/introduction/LSTM)
 
 2. Seq2seq model
 
