@@ -56,7 +56,7 @@ Extracting character-specific conversations from all conversations
 [see introduction/LSTM](https://github.com/hchungdelta/Simple_NN_API/tree/master/NN_v2.0_seq2seq/introduction/LSTM)
 
 2. Seq2seq model
-
+[see introduction/seq2seq](https://github.com/hchungdelta/Simple_NN_API/tree/master/NN_v2.0_seq2seq/introduction/seq2seq)
 
 ## training model
 An embarrassingly parallel computing is implemented automatically in this API (if available).
