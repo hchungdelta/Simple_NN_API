@@ -25,7 +25,7 @@ Based on the previous result, we move on to derive the second last equation in f
 
 <img src="LSTMadd.gif" width="230">
 
-To update weights, biases, and also the loss. Here I only show the forget gate part since the other three equations can be derived in the similar way.
+To derive weights, biases, and also the loss. Here I only show the forget gate part since the other three equations can be derived in the similar way.
 
 <img src="LSTM4.gif" width="310">
 
