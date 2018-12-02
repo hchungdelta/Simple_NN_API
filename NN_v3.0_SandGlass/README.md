@@ -2,7 +2,13 @@
 
 * Autoencoder
 * Inception
+[Christian Szegedy, Sergey Ioffe, Vincent Vanhoucke (2016)](https://ai.google/research/pubs/pub45169)
 * Attention
+[Dzmitry Bahdanau, Kyunghyun Cho, Yoshua Bengio (2014)](https://arxiv.org/abs/1409.0473)
+* Batch Normalization
+[Sergey Ioffe, Christian Szegedy (2015)](https://arxiv.org/abs/1502.03167)
+* Batch Renormalization
+[Sergey Ioffe (2017)](https://arxiv.org/abs/1702.03275)
 ## Basic idea:
 
 front inception: receive the information, translation into our brain.
