@@ -26,6 +26,11 @@ training data source: [小説家になろう](https://syosetu.com/)
 ## computation cost:
 * 1 CPU, 1 week training.
 
+## result :
+
+<img src="result/result3.gif" width="333">
+<img src="result/result2.gif" width="285">
+<img src="result/result1.gif" width="312">
 # Project:
 
 ## data preparing
