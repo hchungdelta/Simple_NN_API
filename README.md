@@ -7,5 +7,5 @@ Convolutional neural network (CNN), fully connected layers(FCL)
 #### v2.0 seq2seq model. (30/11/2018)
 Add LSTM encoder/decoder.  
 
-#### v3.0 CNN2CNN model. (developing)
+#### v3.0 Conv2Conv model. (developing)
 Add Autodecoder, inception, attention.
