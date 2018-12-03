@@ -1,5 +1,5 @@
 # SandGlass
-<img src="introduction/sandglass.png" width="300">
+<img src="introduction/sandglass.png" width="302">
 
 * Autoencoder
 * Inception
