@@ -12,12 +12,12 @@
 [Sergey Ioffe (2017)](https://arxiv.org/abs/1702.03275)
 ## Basic idea:
 
-front inception: receive the information, translation into our brain.
+Stimulus (encoder conv. part): receive the information, translate into our brain.
 
-center fully connected layer: Our brain. Here it thinking
+Brain processing (center fully connected layer): processing the information.
 
-Reply inception: Verbalize what we are thinking.
-verbalize the 
+Response (decoder conv. part): verbalize the information.
+
 
 ## Pros:
 - Compare to traditional seq2seq model, this mechanism is less likely to lose information.
