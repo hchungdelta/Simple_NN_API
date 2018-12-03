@@ -12,11 +12,11 @@
 [Sergey Ioffe (2017)](https://arxiv.org/abs/1702.03275)
 ## Basic idea:
 
-Stimulus (encoder conv. part): receive the information, translate into our brain.
+**Stimulus (encoder conv. part)** : receive the information, translate into our brain.
 
-Brain processing (center fully connected layer): processing the information.
+**Brain processing (center fully connected layer)**: processing the information.
 
-Response (decoder conv. part): verbalize the information.
+**Response (decoder conv. part)**: verbalize the information.
 
 
 ## Pros:
