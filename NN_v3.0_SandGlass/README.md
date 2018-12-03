@@ -1,4 +1,5 @@
 # SandGlass
+<img src="introduction/sandglass.png" width="300">
 
 * Autoencoder
 * Inception
