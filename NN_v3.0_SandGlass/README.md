@@ -32,14 +32,14 @@
 
 ## Future work:
 
+
+
+#### brain processing part
+* Memory 
+* personality (persona embedding)
+
 #### stimulus & response part.
 * [Transformer](https://arxiv.org/abs/1706.03762)
 * [google bert](https://arxiv.org/pdf/1810.04805.pdf)
-
-#### brain processing part
-* Memory
-* personality.
-
-
 
 
