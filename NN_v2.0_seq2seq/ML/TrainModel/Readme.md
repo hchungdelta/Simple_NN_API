@@ -6,7 +6,7 @@ The function of this model:
 
 #### 1. How to update the weights and bias in each layer.
 * learning rate
-* learning approach : support SGD, momentum, and adam.
+* optimizer : support SGD, momentum, and adam.
 ```
 #example
 EndeModel = ML.EndeModel.Model(lr=0.0012) #lr is short for learning rate.
