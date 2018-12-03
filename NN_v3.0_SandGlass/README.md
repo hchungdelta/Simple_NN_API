@@ -12,12 +12,13 @@
 [Sergey Ioffe (2017)](https://arxiv.org/abs/1702.03275)
 ## Basic idea:
 
-**Stimulus (encoder conv. part)** : receive the information, translate into our brain.
 
-**Brain processing (center fully connected layer)**: processing the information.
 
-**Response (decoder conv. part)**: verbalize the information.
-
+| our brain       |      in neural network      |            description   |
+| :---:           |           :---:             |            :---:         | 
+|stimulus         |    encoder conv. part       | receive the information, translate into our brain. | 
+| brain processing|center fully connected layer |    process the information. |
+| response        |     decoder conv. part      |  verbalize the information. | 
 
 ## Pros:
 - Compare to traditional seq2seq model, this mechanism is less likely to lose information.
