@@ -1,6 +1,7 @@
 # SandGlass
 <img src="introduction/sandglass.png" width="302">
 
+
 * Autoencoder
 * Inception
 [Christian Szegedy, Sergey Ioffe, Vincent Vanhoucke (2016)](https://ai.google/research/pubs/pub45169)
@@ -39,6 +40,8 @@
 * personality (persona embedding)
 
 #### stimulus & response part.
+* Dropout
+* Mess up  (You can what understand said I even if sentence mess up I like this.)
 * [Transformer](https://arxiv.org/abs/1706.03762)
 * [google bert](https://arxiv.org/pdf/1810.04805.pdf)
 
