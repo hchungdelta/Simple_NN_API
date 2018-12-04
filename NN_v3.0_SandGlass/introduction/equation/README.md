@@ -18,6 +18,7 @@ Based on these ideas, I have further developed three other types of convolutiona
 
 
 <img src="equation_graph/conv.gif" width="620">
+<img src="equation_graph/reverseconv.gif" width="620">
 <img src="equation_graph/reduceconv.gif" width="620">
 <img src="equation_graph/expandconv.gif" width="620">
-<img src="equation_graph/reverseconv.gif" width="620">
+
