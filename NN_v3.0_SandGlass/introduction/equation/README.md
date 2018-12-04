@@ -1,4 +1,4 @@
-# SandGlass Conv2conv model
+# SandGlass Conv2Conv model
 
 The basic building block is the following equation. 
 
