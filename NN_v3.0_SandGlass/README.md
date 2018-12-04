@@ -55,9 +55,8 @@ Nowadays, natural language processing makes an unprecedented breakthrough, Googl
 * [Transformer](https://arxiv.org/abs/1706.03762)
 * [google bert](https://arxiv.org/pdf/1810.04805.pdf)
 * Encode the position of the words.
+
+
+#### Can exploit information other than words?
 * Encode "the sound" of the words. (make "no!" equals to "noooooo!")
-
-
-#### Can exploit information other than language (behavior ...etc)?
-
 
