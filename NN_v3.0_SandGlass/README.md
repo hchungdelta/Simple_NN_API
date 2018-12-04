@@ -28,8 +28,8 @@
 - Relatively robust, since the prediction is dependent on the whole corpus rather than highly depends on the previous output.
 
 ## Cons:
-1. Complicated.
-
+- more complicated, more hyperparameters.
+- cost of time could be longer than LSTM.
 
 ## Future work:
 
@@ -39,10 +39,25 @@
 * Memory 
 * personality (persona embedding)
 
+In this model, I expect the brain processing part can be expanded to larger, deeper scale (incorporate personal embedding, memory).
+If the stimulus part and the response part are well-trained, the brain processing part can be "replaceable". 
+
+My idea is that, if we are the native speakers of a certain language, of course, we can easily understand and fluently express ourselves fluently using that language. However, to a certain question usually we have a variety of replies, and different options toward some issues, which means the stimulus-response system is not always one-to-one related and makes the human languages very versatile.
+Since our brain processing provides different connections between the stimulus and the response, depends on previous experience and personality ...etc.
+Nowadays, natural language processing makes an unprecedented breakthrough, Google does an excellent job on this. To some degree, AI can defeat real human. The next step I think is, make AI more human-like. Since the training data are usually very general, without identity, in order to make the most out of it. (In "Ghost in the shell" language: AI lacks ghost line)
+
+
+
+
 #### stimulus & response part.
 * Dropout
 * Mess up  (You can what understand said I even if sentence mess up I like this.)
 * [Transformer](https://arxiv.org/abs/1706.03762)
 * [google bert](https://arxiv.org/pdf/1810.04805.pdf)
+* Encode the position of the words.
+* Encode "the sound" of the words. (make "no!" equals to "noooooo!")
+
+
+#### Can exploit information other than language (behavior ...etc)?
 
 
