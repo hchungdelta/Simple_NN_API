@@ -59,4 +59,4 @@ Nowadays, natural language processing makes an unprecedented breakthrough, Googl
 
 #### Can exploit information other than words?
 * Encode "the sound" of the words. (make "no!" equals to "noooooo!")
-
+* In hierarchy method? (only used when necessary)
