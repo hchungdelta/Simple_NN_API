@@ -1,13 +1,13 @@
 # Performance test 
 
 
-Test model:
+## Test model:
 ```
 1. LSTM teacher foring mode (black line)
 2. LSTM infer mode (gray line)
 3. SandGlass + Batch Normalization (green line)
 ```
-Test model detail:
+## Test model detail:
 ```
 sentence length : 32 (without cutoff, in order to compare these models on the same footing.)
 LSTM:
