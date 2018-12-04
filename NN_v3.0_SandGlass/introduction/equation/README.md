@@ -24,4 +24,8 @@ Based on these ideas, I have further developed three other types of convolutiona
 
 ## others:
 
-* Reduce Attention (testing):
+* Reduce Attention Conv:
+Usage is similar to reduce convolutional layer. However, this convolutional layer doesn't have any hyperparameter.
+
+The algorithm is presented below:
+
