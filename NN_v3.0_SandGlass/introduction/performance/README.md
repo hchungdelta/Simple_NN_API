@@ -1,11 +1,6 @@
 # Performance test 
 
-```
-Optimizer: adam
-learning rate: 0.02
-training data: 1,000 sentences from south park's script.
-amount of vocabulary: 1033 (without using pre-trained embedding vectors)
-```
+
 Test model:
 ```
 1. LSTM teacher foring mode (black line)
@@ -19,6 +14,13 @@ LSTM:
 one layer Bi-RNN
 hidden units = 320 
 ```
+```
+Optimizer: adam
+learning rate: 0.002
+training data: 1,000 sentences from south park's script.
+amount of vocabulary: 1033 (without using pre-trained embedding vectors)
+```
+
 SangGlass: 
 
 
