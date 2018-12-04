@@ -30,7 +30,6 @@ Since the neural network architecture of this model looks like sand glass, I tem
 
 ## Cons:
 - more complicated, more hyperparameters.
-- cost of time could be longer than LSTM.
 
 ## Future work:
 
