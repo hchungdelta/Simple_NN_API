@@ -22,3 +22,6 @@ Based on these ideas, I have further developed three other types of convolutiona
 <img src="equation_graph/reduceconv.gif" width="620">
 <img src="equation_graph/expandconv.gif" width="620">
 
+## others:
+
+* Reduce Attention (testing):
