@@ -1,4 +1,5 @@
 # SandGlass
+Since the neural network architecture of this model looks like sand glass, I temporarily call this model SandGlass.
 <img src="introduction/sandglass.png" width="302">
 
 
