@@ -28,7 +28,7 @@ Based on these ideas, I have further developed three other types of convolutiona
 #### Reduce Attention Conv:
 Usage is similar to reduce convolutional layer. However, this convolutional layer doesn't have any hyperparameter.
 
-The fundamental idea is to extract the most "meaningful" vector from the previous layer
+The fundamental idea is to extract the most "meaningful" vector from the previous layer by the weighting sum.
 The algorithm is presented below, the schematic diagram is on the right below.
  
  
