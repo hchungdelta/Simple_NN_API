@@ -1,8 +1,14 @@
 # SandGlass
 Since the neural network architecture of this model looks like sand glass, I temporarily call this model SandGlass.
-<img src="introduction/sandglass.png" width="302">
+<img src="introduction/sandglass.png" width="322">
 
 
+<img src="introduction/sandglass_layer.png" width="602">
+
+Layers: Fully connected layer, 5 different kinds of convolutional layers (see [Transformer](https://arxiv.org/abs/1706.03762))
+Support activation: GLU(Gated Linear Units), GTU(Gated Tanh Units), tanh
+
+## Basic idea:
 * Autoencoder
 * Inception
 [Christian Szegedy, Sergey Ioffe, Vincent Vanhoucke (2016)](https://ai.google/research/pubs/pub45169)
@@ -12,8 +18,6 @@ Since the neural network architecture of this model looks like sand glass, I tem
 [Sergey Ioffe, Christian Szegedy (2015)](https://arxiv.org/abs/1502.03167)
 * Batch Renormalization
 [Sergey Ioffe (2017)](https://arxiv.org/abs/1702.03275)
-## Basic idea:
-
 
 
 | our brain       |      in neural network      |            description   |
@@ -30,6 +34,7 @@ Since the neural network architecture of this model looks like sand glass, I tem
 
 ## Cons:
 - more complicated, more hyperparameters.
+- less dependent on previous output, which could lead to less fluency.
 
 ## Future work:
 
