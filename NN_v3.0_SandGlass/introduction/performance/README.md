@@ -3,6 +3,7 @@
 
 ## Test model:
 ```
+The diagrams are shown below.
 1. LSTM teacher foring mode (black line)
 2. LSTM infer mode (gray line)
 3. SandGlass + Batch Normalization (green line)
