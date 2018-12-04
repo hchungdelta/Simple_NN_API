@@ -26,7 +26,8 @@ SangGlass:
 
 Loss-epoch curves 
 
-
+<img src="performance_epoch.png" width="550">
 
 Loss-time curves
 
+<img src="performace_cost.png" width="550">
