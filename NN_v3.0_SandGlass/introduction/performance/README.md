@@ -11,21 +11,21 @@ The diagrams are shown below.
 ## Test model detail:
 ```
 sentence length : 32 (without cutoff, in order to compare these models on the same footing.)
-LSTM:
-Dense layer (1033 x 80) -> Bi-RNN -> decoder RNN -> Dense layer (320 x 1033)
-hidden units = 320
-```
-
-
-```
 Optimizer: adam
 learning rate: 0.002
 training data: 1,000 sentences from south park's script.
 amount of vocabulary: 1033 (without using pre-trained embedding vectors)
 ```
 
-SandGlass: 
+- **SandGlass**: 
+ 
+<img src="test_sandglass_mode.png" width="500">
 
+- **LSTM**:
+```
+Dense layer (1033 x 80) -> Bi-RNN -> decoder RNN -> Dense layer (320 x 1033)
+hidden units = 320
+```
 
 ## Loss-epoch curves 
 
