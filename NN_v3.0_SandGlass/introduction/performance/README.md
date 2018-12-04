@@ -11,9 +11,11 @@
 ```
 sentence length : 32 (without cutoff, in order to compare these models on the same footing.)
 LSTM:
-one layer Bi-RNN
-hidden units = 320 
+Dense layer (1033 x 80) -> Bi-RNN -> decoder RNN -> Dense layer (320 x 1033)
+hidden units = 320
 ```
+
+
 ```
 Optimizer: adam
 learning rate: 0.002
@@ -21,13 +23,15 @@ training data: 1,000 sentences from south park's script.
 amount of vocabulary: 1033 (without using pre-trained embedding vectors)
 ```
 
-SangGlass: 
+SandGlass: 
 
 
-Loss-epoch curves 
+## Loss-epoch curves 
+
 
 <img src="performance_epochs.png" width="550">
 
-Loss-time curves
+
+## Loss-time curves
 
 <img src="performance_cost.png" width="550">
