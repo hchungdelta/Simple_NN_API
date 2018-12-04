@@ -10,7 +10,7 @@ The diagrams are shown below.
 ```
 ## Test model detail:
 ```
-sentence length : 32 (without cutoff, in order to compare these models on the same footing.)
+sentence length: 32 (without cutoff, in order to compare these models on the same footing.)
 Optimizer: adam
 learning rate: 0.002
 training data: 1,000 sentences from south park's script.
