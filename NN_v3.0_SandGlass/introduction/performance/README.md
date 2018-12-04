@@ -7,7 +7,8 @@ The diagrams are shown below.
 1. LSTM teacher foring mode (black line)
 2. LSTM infer mode (gray line)
 3. SandGlass + Batch Normalization (green line)
-
+4. SandGlass without Batch Normalization (olive line)
+```
 
 ## Loss-epoch curves 
 
@@ -22,7 +23,7 @@ BN is short for batch normalization. The results indicate that in terms of loss-
 In terms of efficiency, the results indicate that the cost-performance of this new model can outperform LSTM. It is interesting to see that even without BN (curve with olive color), the convergence rate is still comparable to LSTM (teacher forcing mode). 
 
 
-```
+
 ## Test model detail:
 ```
 sentence length: 32 (without cutoff, in order to compare these models on the same footing.)
