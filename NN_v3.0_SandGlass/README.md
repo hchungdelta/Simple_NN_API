@@ -16,7 +16,7 @@ The model will show the information of training neural network structure at the 
 * **main.py**: training mode.
 * **data_importer.py**: subsidiary code, for inputing dictionary, data, and some functions.
 ## training data:
-* 30 and 1000 conversations from Southpark are restored in trainingdata/json. (notes that many swear words appear...) 
+* 30 and 1000 conversations from Southpark are restored in trainingdata/json for testing purpose. (notes that many swear words appear...) 
 
 ## Update:
 #### Layers: 
