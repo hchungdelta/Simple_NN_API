@@ -36,6 +36,8 @@ BN(Batch Normalization)
 - Can be trained without decoder input. 
 - Relatively robust, since the prediction is dependent on the whole corpus rather than highly depends on the previous output.
 
+[see introduction/performance](https://github.com/hchungdelta/Simple_NN_API/tree/master/NN_v3.0_SandGlass/introduction/performance)
+
 ## Cons:
 - more complicated, more hyperparameters.
 - less dependent on previous output, which could lead to less fluency.
