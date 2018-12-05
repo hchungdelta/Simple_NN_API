@@ -314,7 +314,6 @@ class ExpandConv(trainable_layer):
         hidden_units : in shape (expand_size, input_depth,output_depth)
         expand_size  :  input_timestep -> expand_size*input_timestep
         padding      : add zero paddlings at both sides of input.
-
         """
         self.expand_size = hidden_units[0]
         self.input_depth = hidden_units[1]
@@ -493,14 +492,13 @@ class GTU:
         return " tanh(A)*sigmoid(B) (2*depth -> depth)"
 class BatchNorm(trainable_layer):
     def __init__(self,mode='train'):
-        self.W = 1.0-np.random.random(1)*0.1  # rquals to gamma
+        self.W = 1.0-np.random.random(1)*0.1  # equals to gamma
         self.b = np.random.random(1)*0.1  # equals to beta
         self.mode = mode
         self.recent_var = []
         self.recent_mean = []
         self.record_amount = 10
-        if self.mode == "infer":
-            pass 
+
     def forward(self, inp):
         self.inp = inp
         self.inp_filters = inp.shape[0]
