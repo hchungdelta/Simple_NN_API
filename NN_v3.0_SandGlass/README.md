@@ -4,7 +4,7 @@ Since the neural network architecture of this model looks like sandglass, I temp
 
 <img src="introduction/sandglass.png" width="322">
 
-The model will show the information of training neural network structure at the beginning.
+The model will show the information of the training neural network structure at the beginning.
 <img src="introduction/sandglass_layer.png" width="602">
 
 ## environment:
