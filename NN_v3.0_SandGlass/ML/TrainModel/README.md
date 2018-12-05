@@ -1,7 +1,6 @@
 # Training Model
 EndeModel is short for the Encoder/Decoder Model.
 This model determines how to update the weights and bias in each layer.
-
 The functions of this model:
 
 #### 1. How to update the weights and bias in each layer.
