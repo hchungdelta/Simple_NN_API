@@ -39,4 +39,4 @@ The backpropagation part:
 <p align="center"><img width="320" src="equation_graph/reduceattn_backprop.gif"></p>
 
 Currently, there is no clear evidence to show this conv. layer can outperform reduce conv. As the following diagram illustrates the efficiency of both layers.
-<img src="with_without_attn_loss.gif" width="440">
+<img src="equation_graph/with_without_attn_loss.gif" width="440">
