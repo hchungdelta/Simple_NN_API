@@ -11,6 +11,8 @@ Fully connected layer, 5 different kinds of convolutional layers (see [introduct
 GLU(Gated Linear Units), GTU(Gated Tanh Units), tanh
 #### normalization:
 BN(Batch Normalization)
+#### training model:
+
 
 ## Basic idea:
 * Autoencoder
