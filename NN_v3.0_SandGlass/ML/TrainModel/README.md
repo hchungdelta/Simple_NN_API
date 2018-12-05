@@ -32,7 +32,7 @@ If parallel computing is available, the model will broadcast the same initial we
 if EndeModel.comm != None :
     EndeModel.Bcast_Wb(initial=True)
 ```
-And also, one must make sure the training data are separated to each processor correctly, as  in ```main.py```.
+And also, one must make sure the training data are separated to each processor correctly, as  in [main.py](https://github.com/hchungdelta/Simple_NN_API/blob/master/NN_v3.0_SandGlass/main.py).
 Only three lines are needed to train the model.
 
 ```
