@@ -44,3 +44,5 @@ Dense layer (1033 x 80) -> Bi-RNN -> decoder RNN -> Dense layer (320 x 1033)
 hidden units = 320
 ```
 
+
+
