@@ -4,7 +4,7 @@ The basic building block is the following equation.
 <p align="center"><img width="280" src="equation_graph/conv_equation.gif"></p>
  
 
-"x" is the inputs (embedding or previous convolutional layer). It gathers the information from previous layers. Hence each output possesses the information of the kernel size amount of inputs. The more the convolutional layers, the larger the information it can gain.
+"x" is the inputs (embedding or previous convolutional layer). It gathers the information from previous layers. Hence each output possesses the information of the kernel size amount of inputs. The more the convolutional layers, the more the information it can gain.
 
 As in CNN, the amount of filter can be more than one, and could have different kernel sizes.
 Therefore, in general, the equation can be expressed as:
