@@ -38,6 +38,6 @@ The backpropagation part:
 
 <p align="center"><img width="320" src="equation_graph/reduceattn_backprop.gif"></p>
 
-Currently, there is no clear evidence to show this conv. layer can outperform reduce conv. As the following diagram illustrates the efficiency of both layers.
+Currently, although reduce attention conv. can replace the reduce conv. There is no clear evidence to show this conv. layer can outperform it. As the following diagram illustrates the efficiency of both layers. Some improvements are needed.
 
 <img src="equation_graph/with_without_attn_loss.gif" width="440">
