@@ -17,6 +17,7 @@
 | brain processing|center fully connected layer |    process the information. |
 | response        |     decoder conv. part      |  verbalize the information. | 
 
+[The algorithm of thie model is presented here](https://github.com/hchungdelta/Simple_NN_API/tree/master/NN_v3.0_SandGlass/introduction/equation)
 ## Pros:
 - Compare to traditional seq2seq model, this mechanism is less likely to lose information.
 - Easy to perform parallel computing, expected to be trained faster.
