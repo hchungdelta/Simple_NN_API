@@ -1,5 +1,6 @@
 # SandGlass
 Since the neural network architecture of this model looks like sand glass, I temporarily call this model SandGlass.
+[see overview for further information](https://github.com/hchungdelta/Simple_NN_API/blob/master/NN_v3.0_SandGlass/introduction/overview/README.md)
 <img src="introduction/sandglass.png" width="322">
 
 The model will show the information of training neural network structure at the beginning.
