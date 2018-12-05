@@ -15,7 +15,7 @@ The diagrams are shown below.
 
 <img src="performance_epochs.png" width="550">
 
-BN is short for batch normalization. The results indicate that in terms of loss-epoch tendency, the performance of this model is similar to LSTM (infer mode). If includes BN, the model can converge much faster, approaches to the performance of LSTM (teacher forcing mode). In general, SandGlass conv2conv2 model can approach to lower loss with less fluctuation.
+BN is short for batch normalization. The results indicate that in terms of loss-epoch tendency, the performance of this model is similar to LSTM (infer mode). If includes BN, the model can converge much faster, approaches to the performance of LSTM (teacher forcing mode). In general, SandGlass Conv2Conv model can approach to lower loss with less fluctuation.
 
 ## Loss-time curves
 
