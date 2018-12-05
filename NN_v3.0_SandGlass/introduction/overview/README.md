@@ -41,9 +41,7 @@ If the stimulus part and the response part are well-trained, the brain processin
 If we are the native speakers of a certain language, of course we can easily understand and fluently express ourselves fluently using that language. However, to a certain question usually we have a variety of replies and different options toward some issues, which means the stimulus-response system is not always one-to-one related and makes the human languages very versatile.
 Since our brain processing provides different connections between the stimulus and the response, depends on previous experience and personality ...etc.
 
-Nowadays, natural language processing makes an unprecedented breakthrough (Google does an excellent job on this). To some degree, AI can defeat real human. To the best of my knowledge, the training data are usually very general (without identity) in order to make the most out of it. The next step I think is to make AI more human-like, which is a fruitful realm wait for exploring.
-
-(A digression - In "Ghost in the shell" language - AI lacks ghost line)
+Nowadays, natural language processing makes an unprecedented breakthrough (Google does an excellent job on this). To some degree, AI can defeat real human. To the best of my knowledge, the training data are usually very general (without identity) in order to make the most out of it. The next step I think is to make AI more human-like, which is a fruitful realm wait for exploring. (A digression - In "Ghost in the shell" language - AI lacks ghost line)
 
 
 
