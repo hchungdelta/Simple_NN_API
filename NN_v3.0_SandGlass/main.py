@@ -19,8 +19,8 @@ np.set_printoptions(precision=3)
 np.set_printoptions(suppress=True)
 
 # input training data
-dict_path = "trainingdata/dict_test30.json"
-training_data_path = "trainingdata/training_30data.json"
+dict_path = "trainingdata/dict_test1000.json"
+training_data_path = "trainingdata/training_1000data.json"
 dicts, reversed_dicts = input_dict(dict_path)
 inputdata, targetdata = input_training_data(training_data_path)
 
