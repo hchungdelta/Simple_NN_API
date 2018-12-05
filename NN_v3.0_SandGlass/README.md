@@ -5,8 +5,12 @@ Since the neural network architecture of this model looks like sand glass, I tem
 
 <img src="introduction/sandglass_layer.png" width="602">
 
-Layers: Fully connected layer, 5 different kinds of convolutional layers (see [introduction/equation](https://github.com/hchungdelta/Simple_NN_API/tree/master/NN_v3.0_SandGlass/introduction/equation))
-Support activation: GLU(Gated Linear Units), GTU(Gated Tanh Units), tanh
+#### Layers: 
+Fully connected layer, 5 different kinds of convolutional layers (see [introduction/equation](https://github.com/hchungdelta/Simple_NN_API/tree/master/NN_v3.0_SandGlass/introduction/equation))
+#### Support activation: 
+GLU(Gated Linear Units), GTU(Gated Tanh Units), tanh
+### normalization:
+BN(Batch Normalization)
 
 ## Basic idea:
 * Autoencoder
