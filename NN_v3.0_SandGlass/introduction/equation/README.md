@@ -1,6 +1,6 @@
 # SandGlass Conv2Conv model
 
-The basic building block is the following equation. ([code are shown here](https://github.com/hchungdelta/Simple_NN_API/blob/master/NN_v3.0_SandGlass/ML/Layer/CNN2CNN_layer.py))
+The basic building block is the following equation. 
 <p align="center"><img width="280" src="equation_graph/conv_equation.gif"></p>
  
 
@@ -13,7 +13,7 @@ Therefore, in general, the equation can be expressed as:
 
 
 
-Based on these ideas, I have further developed three other types of convolutional layers, including reverse convolutional layer (reverse conv.), reduce convolutional layer (reduce conv.), and expand convolutional layer (expand conv.) As what follows:
+Based on these ideas, I have further developed three other types of convolutional layers, including reverse convolutional layer (reverse conv.), reduce convolutional layer (reduce conv.), and expand convolutional layer (expand conv.) As what follows: ([code are shown here](https://github.com/hchungdelta/Simple_NN_API/blob/master/NN_v3.0_SandGlass/ML/Layer/CNN2CNN_layer.py))
 
 
 <p align="center"><img width="520" src="equation_graph/conv_equation3.gif"></p>
