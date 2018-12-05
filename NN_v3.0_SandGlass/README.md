@@ -2,6 +2,7 @@
 Since the neural network architecture of this model looks like sand glass, I temporarily call this model SandGlass.
 <img src="introduction/sandglass.png" width="322">
 
+The model will show the information of training neural network structure at the beginning.
 <img src="introduction/sandglass_layer.png" width="602">
 
 ## environment:
@@ -15,7 +16,7 @@ Since the neural network architecture of this model looks like sand glass, I tem
 * **main.py**: training mode.
 * **data_importer.py**: subsidiary code, for inputing dictionary, data, and some functions.
 ## training data:
-* 30 and 1000 conversation from Southpark are restored in trainingdata/json. (notes that many swear words appear...) 
+* 30 and 1000 conversations from Southpark are restored in trainingdata/json. (notes that many swear words appear...) 
 
 #### Layers: 
 Fully connected layer, 5 different kinds of convolutional layers (see [introduction/equation](https://github.com/hchungdelta/Simple_NN_API/tree/master/NN_v3.0_SandGlass/introduction/equation))
