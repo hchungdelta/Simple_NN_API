@@ -1,5 +1,5 @@
 """
-Title : SandGlass conv2conv2 model, training code
+Title : SandGlass Conv2Conv model, training code
 
 Author: Hao-Chien, Hung
 Date: 05/12/2018
@@ -117,7 +117,7 @@ display = 100
 # record the cost of time
 display_time = time.time()
 
-for step in range(1500):
+for step in range(5000):
     if rank == 0:
         batchinput, batch_decode_input, batchtarget = batch_helper(inputdata,
                                                                    targetdata,
