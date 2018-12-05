@@ -1,6 +1,6 @@
 # SandGlass Conv2Conv model
 
-The basic building block is the following equation. 
+The basic building block is the following equation. ([code are shown here](https://github.com/hchungdelta/Simple_NN_API/blob/master/NN_v3.0_SandGlass/ML/Layer/CNN2CNN_layer.py))
 <p align="center"><img width="280" src="equation_graph/conv_equation.gif"></p>
  
 
