@@ -38,7 +38,7 @@ The backpropagation part:
 
 <p align="center"><img width="320" src="equation_graph/reduceattn_backprop.gif"></p>
 
-Currently, although reduce attention conv. can replace the reduce conv. There is no clear evidence to show this conv. layer can outperform it. As the following diagram illustrates the efficiency of both layers. Some improvements are needed.
+Currently, although the reduce attention convolutional layer can replace the reduce convolutional layer, there is no clear evidence to show this reduce attention convolutional layer can outperform the reduce convolutional layer. As the following diagram illustrates the efficiency of both layers. Some improvements are needed.
 
 <p align="center"><img width="440" src="equation_graph/with_without_attn_loss.gif"></p>
 
