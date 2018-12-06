@@ -160,7 +160,7 @@ class conv1Ds_rev(conv1D_group):
         sum_output = []
         for idx, this_conv1D in enumerate(self.conv1Ds):
             sum_output.append(this_conv1D.forward(np.array([inp[idx]])))
-        return  np.sum(sum_output,axis=0)
+        return np.sum(sum_output, axis=0)
 
     def backprop(self, dLoss):
         dL_prev = np.zeros_like(self.inp)
@@ -249,7 +249,6 @@ class ReduceConv(trainable_layer):
         hidden_units : in shape (reduce_size, input_depth,output_depth)
         reduce_size  : input_timestep -> input_timestep/reduce_size
         padding      : add zero paddlings at both sides of input.
-        
         """
         self.reduce_size = hidden_units[0]
         self.input_depth = hidden_units[1]
@@ -314,6 +313,7 @@ class ExpandConv(trainable_layer):
         hidden_units : in shape (expand_size, input_depth,output_depth)
         expand_size  :  input_timestep -> expand_size*input_timestep
         padding      : add zero paddlings at both sides of input.
+
         """
         self.expand_size = hidden_units[0]
         self.input_depth = hidden_units[1]
@@ -432,7 +432,7 @@ class conv1D_rev(trainable_layer):
         pads_front = np.tile(np.zeros((self.batch, self.output_depth)),
                              (self.output_filters, self.amount_of_pad_front, 1, 1))
         pads_end = np.tile(np.zeros((self.batch, self.output_depth)),
-                             (self.output_filters, self.amount_of_pad_end, 1, 1))
+                           (self.output_filters, self.amount_of_pad_end, 1, 1))
         return  np.concatenate((pads_front, dLoss, pads_end), axis=1)
 
 class GLU:
@@ -455,7 +455,7 @@ class GLU:
         self.info_A = inp[:, :, :, :half_depth]
         self.gate_B = self.Sig.forward(inp[:, :, :, half_depth:])
         output = self.info_A * self.gate_B
-        return   output      
+        return  output
     def backprop(self, dLoss):
         dinfo_A = dLoss*self.gate_B
         dgate_B = self.info_A*self.Sig.backprop(dLoss)
@@ -491,8 +491,8 @@ class GTU:
     def description(self):
         return " tanh(A)*sigmoid(B) (2*depth -> depth)"
 class BatchNorm(trainable_layer):
-    def __init__(self,mode='train'):
-        self.W = 1.0-np.random.random(1)*0.1  # equals to gamma
+    def __init__(self, mode='train'):
+        self.W = 1.0-np.random.random(1)*0.1  # rquals to gamma
         self.b = np.random.random(1)*0.1  # equals to beta
         self.mode = mode
         self.recent_var = []
@@ -516,8 +516,8 @@ class BatchNorm(trainable_layer):
             self.sqrt_var = np.sqrt(self.mb_var + self.eps)
             self.norm_x = self.diff/self.sqrt_var
             output = self.W*self.norm_x +self.b
-            self.recent_mean.insert(0,self.mb_mean)
-            self.recent_var.insert(0,self.sqrt_var)
+            self.recent_mean.insert(0, self.mb_mean)
+            self.recent_var.insert(0, self.sqrt_var)
             if len(self.recent_mean) > self.record_amount:
                 self.recent_mean = self.recent_mean[:self.record_amount]
                 self.recent_var = self.recent_var[:self.record_amount]
@@ -534,19 +534,17 @@ class BatchNorm(trainable_layer):
         d_mb_mean = (-1*d_norm_x/self.sqrt_var)+d_mb_var*(-2)*self.diff*self.normalization
         dL_prev = (d_norm_x/self.sqrt_var) + (d_mb_var*self.diff*2+ d_mb_mean)*self.normalization
         return dL_prev
-     
+
     def rewrite_parameter(self, receive_parameter):
         self.infer_mean = receive_parameter["infer_mean"]
         self.infer_var = receive_parameter["infer_var"]
 
     def get_parameter(self):
         # infer var is already in form np.sqrt(var+eps)
-        infer_mean = np.mean(np.array(self.recent_mean),axis=0)
-        infer_var = np.mean(np.array(self.recent_var),axis=0)
-        parameter = {"infer_mean":infer_mean,"infer_var":infer_var}
+        infer_mean = np.mean(np.array(self.recent_mean), axis=0)
+        infer_var = np.mean(np.array(self.recent_var), axis=0)
+        parameter = {"infer_mean":infer_mean, "infer_var":infer_var}
         return parameter
-     
-
 
 class BatchNorm_FCL(trainable_layer):
     def __init__(self):
@@ -585,7 +583,7 @@ class flatten:
         return dLoss.reshape(self.original_shape)
     def description(self):
         return "(T,B,D)->(B,T*D)"
- 
+
 class rever_flatten:
     def __init__(self, into_shape):
         self.into_shape = into_shape
@@ -615,4 +613,3 @@ class squeeze:
         return  np.expand_dims(dLoss, self.squeeze_at)
     def description(self):
         return "(1,T,B,D)->(T,B,D)"
-
