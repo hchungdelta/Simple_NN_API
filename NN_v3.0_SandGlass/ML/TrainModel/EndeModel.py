@@ -21,7 +21,7 @@ except:
     size = 1
 
 class Model:
-    def __init__(self, lr, mode='SGD'):
+    def __init__(self, lr, mode='SGD', clipping=False, clip_value=1):
         # for MPI
         global comm, rank, size
         self.comm = comm
@@ -48,6 +48,9 @@ class Model:
         self.b = []                    # list of arrays (bias)
         self.count_layer_number = 0
         self.descriptions = ''
+        # clipping
+        self.do_clipping = clipping
+        self.clip_value = clip_value
 
     def add(self, layer):
         """
@@ -239,6 +242,11 @@ class Model:
             self.time = 1
 
     def SGD(self):
+        if self.do_clipping:
+            for idx in range(len(self.sum_dW)):
+                self.sum_dW[idx] = self.clipping(self.sum_dW[idx])
+                self.sum_db[idx] = self.clipping(self.sum_db[idx])
+
         self.sum_dW = self.reconstruct(self.sum_dW)
         self.sum_db = self.reconstruct(self.sum_db)
         for idx, update_func in enumerate(self.trainable_update):
@@ -292,6 +300,10 @@ class Model:
                 self.second_m_forW.append((1-self.beta_2)*(self.sum_dW[idx]**2))
                 self.first_m_forb.append((1-self.beta_1)*self.sum_db[idx])
                 self.second_m_forb.append((1-self.beta_2)*(self.sum_db[idx]**2))
+            if self.do_clipping:
+                self.sum_adam_dW[idx] = self.clipping(self.sum_adam_dW[idx])
+                self.sum_adam_db[idx] = self.clipping(self.sum_adam_db[idx])
+
         self.sum_adam_dW = self.reconstruct(self.sum_adam_dW)
         self.sum_adam_db = self.reconstruct(self.sum_adam_db)
         self.time += 1
@@ -304,6 +316,11 @@ class Model:
 
 
     def momentum(self):
+        if self.do_clipping:
+            for idx in range(len(self.sum_dW)):
+                self.sum_dW[idx] = self.clipping(self.sum_dW[idx])
+                self.sum_db[idx] = self.clipping(self.sum_db[idx])
+
         if self.time == -1:
             self.fraction = 0.9
         self.sum_dW = self.reconstruct(self.sum_dW)
@@ -321,6 +338,12 @@ class Model:
             # record previous step
             self.dW_prev.append(self.sum_dW[idx])
             self.db_prev.append(self.sum_db[idx])
+
+    def clipping(self, inp):
+        output = np.where(inp > self.clip_value, self.clip_value, inp)
+        output = np.where(output < -self.clip_value, -self.clip_value, output)
+        return output
+
 
     def Bcast_Wb(self, initial=False):
         """
