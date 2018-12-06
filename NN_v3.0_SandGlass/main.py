@@ -19,14 +19,14 @@ np.set_printoptions(precision=3)
 np.set_printoptions(suppress=True)
 
 # input training data
-dict_path = "trainingdata/dict_test1000.json"
-training_data_path = "trainingdata/training_1000data.json"
+dict_path = "trainingdata/dict_test30.json"
+training_data_path = "trainingdata/training_30data.json"
 dicts, reversed_dicts = input_dict(dict_path)
 inputdata, targetdata = input_training_data(training_data_path)
 
 # training data information
 data_input_depth = len(dicts)
-data_input_batch = 16
+data_input_batch = 10
 data_input_length = 32
 input_max_equal_output = False
 
@@ -73,7 +73,7 @@ Expand_dims = ML.Layer.CNN2CNN_layer.expand_dims(0)
 Squeeze_dims = ML.Layer.CNN2CNN_layer.squeeze(0)
 
 # build up architecture
-EndeModel = ML.EndeModel.Model(lr=0.002, mode='adam')
+EndeModel = ML.EndeModel.Model(lr=0.002, mode='adam', clipping=True, clip_value=1)
 
 #encoder part (stimulus)
 EndeModel.add(Expand_dims)
