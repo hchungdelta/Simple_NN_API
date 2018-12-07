@@ -121,7 +121,7 @@ for step in range(5000):
     if rank == 0:
         batchinput, batch_decode_input, batchtarget = batch_helper(inputdata,
                                                                    targetdata,
-                                                                   data_input_batch,
+                                                                   data_input_batch*size,
                                                                    data_input_length,
                                                                    mode="nocut")
         bcast_data = {"bathinput":batchinput,
