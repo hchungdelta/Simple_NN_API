@@ -21,9 +21,9 @@ The model will show the information of the training neural network structure at 
 * 30 and 1000 conversations from Southpark are restored in trainingdata/json for testing purpose. (notes that many swear words appear...) 
 
 ## Update:
-#### Layers: 
+#### layers: 
 5 different kinds of convolutional layers (see [introduction/equation](https://github.com/hchungdelta/Simple_NN_API/tree/master/NN_v3.0_SandGlass/introduction/equation))
-#### Support activation: 
+#### support activation: 
 GLU(Gated Linear Units), GTU(Gated Tanh Units)
 #### normalization:
 BN(Batch Normalization)
