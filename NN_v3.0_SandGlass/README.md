@@ -30,4 +30,4 @@ BN(Batch Normalization)
 #### training model:
 [see TrainModel](https://github.com/hchungdelta/Simple_NN_API/tree/master/NN_v3.0_SandGlass/ML/TrainModel)
 #### other:
-swapper: randomly exchange two input. (e.g. I am here. -> I here am.)
+swapper: randomly exchange two input, prevent overfitting. (e.g. I am here. -> I here am.)
