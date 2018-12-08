@@ -36,7 +36,7 @@ amount of vocabulary: 1033 (without using pre-trained embedding vectors)
 
 - **SandGlass**: 
  
-<img src="test_sandglass_mode.png" width="500">
+<img src="test_info.png" width="500">
 
 - **LSTM**:
 ```
