@@ -1,5 +1,8 @@
 # Overview
 ## Basic idea:
+Separate the sentences, and extract the most meaningful vectors.
+
+## Inspired by:
 * Autoencoder
 * Inception
 [Christian Szegedy, Sergey Ioffe, Vincent Vanhoucke (2016)](https://ai.google/research/pubs/pub45169)
