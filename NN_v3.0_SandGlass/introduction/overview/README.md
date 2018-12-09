@@ -2,6 +2,15 @@
 ## Basic idea:
 Separate the sentences, and extract the most meaningful vectors.
 
+| our brain       |      in neural network      |            description   |
+| :---:           |           :---:             |            :---:         | 
+|stimulus         |    encoder conv. part       | receive the information, translate into our brain. | 
+| brain processing|center fully connected layer |    process the information. |
+| response        |     decoder conv. part      |  verbalize the information. | 
+
+[The algorithm of thie model is presented here](https://github.com/hchungdelta/Simple_NN_API/tree/master/NN_v3.0_SandGlass/introduction/equation)
+
+
 ## Inspired by:
 * Autoencoder
 * Inception
@@ -14,13 +23,7 @@ Separate the sentences, and extract the most meaningful vectors.
 [Sergey Ioffe (2017)](https://arxiv.org/abs/1702.03275)
 
 
-| our brain       |      in neural network      |            description   |
-| :---:           |           :---:             |            :---:         | 
-|stimulus         |    encoder conv. part       | receive the information, translate into our brain. | 
-| brain processing|center fully connected layer |    process the information. |
-| response        |     decoder conv. part      |  verbalize the information. | 
 
-[The algorithm of thie model is presented here](https://github.com/hchungdelta/Simple_NN_API/tree/master/NN_v3.0_SandGlass/introduction/equation)
 ## Pros:
 - Compare to traditional seq2seq model, this mechanism is less likely to lose information.
 - Easy to perform parallel computing, expected to be trained faster.
