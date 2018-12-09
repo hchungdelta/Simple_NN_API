@@ -22,7 +22,7 @@ BN is short for batch normalization. The results show that both SandGlass models
 Regarding efficiency, both SandGlass models can also be trained faster than traditional LSTM.
 
 
-Caution: this is a comparison for small-scale data training.
+Caution: this is a comparison for small-scale data. 
 
 ## Test model detail:
 ```
