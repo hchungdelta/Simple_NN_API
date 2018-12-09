@@ -4,10 +4,10 @@
 ## Test model:
 ```
 The diagrams are shown below.
-1. SandGlass + Batch Normalization (green line)
+1. LSTM teacher foring mode (black line)
 2. SandGlass without Batch Normalization (olive line)
-3. LSTM teacher foring mode (black line)
-4. LSTM infer mode (gray line)
+3. SandGlass with Batch Normalization (green line)
+
 
 ```
 
@@ -15,15 +15,16 @@ The diagrams are shown below.
 
 <img src="loss_epoch.png" width="550">
 
-BN is short for batch normalization. The results indicate that in terms of loss-epoch tendency, the performance of this model is similar to LSTM (infer mode). If includes BN, the model can converge much faster, approaches to the performance of LSTM (teacher forcing mode). In general, SandGlass Conv2Conv model can approach to lower loss with less fluctuation.
+BN is short for batch normalization. The results show that both SandGlass models (with/without BN) can outperform traditional LSTM. 
 
 ## Loss-time curves
 
 <img src="loss_time.png" width="550">
 
-In terms of efficiency, the results indicate that the cost-performance of this new model can outperform LSTM. It is interesting to see that even without BN (curve with olive color), the convergence rate is still comparable to LSTM (teacher forcing mode). 
+Regarding efficiency, both SandGlass models can also be trained faster than traditional LSTM.
 
 
+Caution: this is a comparison for small-scale data training.
 
 ## Test model detail:
 ```
