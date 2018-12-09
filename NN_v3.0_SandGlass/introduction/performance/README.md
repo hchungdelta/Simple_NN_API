@@ -3,12 +3,10 @@
 
 ## Test model:
 ```
-The diagrams are shown below.
 1. LSTM teacher foring mode (black line)
 2. SandGlass without Batch Normalization (olive line)
 3. SandGlass with Batch Normalization (green line)
-
-
+The diagrams are shown below.
 ```
 
 ## Loss-epoch curves 
