@@ -5,3 +5,4 @@
 * **FCL_layer.py**: fully connected layers.
 * **LSTM_layer.py**: Long Short Term Memory layer. (time-sequence seq2seq model.)
 * **lstmhelper.py**: some supplementary functions for LSTM_layer.py.
+* **Normalization.py**: batch normalization.
