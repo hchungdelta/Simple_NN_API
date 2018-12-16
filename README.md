@@ -9,6 +9,8 @@ Add LSTM encoder/decoder.
 
 #### v3.0 Conv2Conv model. (01/12/2018 - developing)
 Add conv1D, inception, attention.
+* v.3.01 improve the algorithm, it can potentially speed up x5~ .
+* v.3.02 add attention mechanism.
 
 #### v3.1 Double autoencoder model. (08/12/2018 - developing)
  Based on v3.0.
