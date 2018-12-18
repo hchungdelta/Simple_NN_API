@@ -24,7 +24,7 @@ The model will show the information of the training neural network structure at 
 #### layers: 
 * 5 different kinds of convolutional layers (see [introduction/equation](https://github.com/hchungdelta/Simple_NN_API/tree/master/NN_v3.0_SandGlass/introduction/equation))
 
-* attention mechanism (see [introduction/attention_mechanism]
+* attention mechanism (see [introduction/attention_mechanism](https://github.com/hchungdelta/Simple_NN_API/tree/master/NN_v3.0_SandGlass/introduction/attention_mechanism))
 
 #### normalization:
 BN(Batch Normalization)
