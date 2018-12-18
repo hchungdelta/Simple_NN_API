@@ -18,7 +18,7 @@ The multiple-layers attention mechanism is available for version > 3.02.
 ## .py file:
 * **main.py**: training mode.
 * **infer.py**: infer mode.
-* **random_gene.py.py**: generate random lists with random lengths.
+* **random_gene.py**: generate random lists with random lengths.
 
 ## Update:
 #### layers: 
@@ -30,5 +30,4 @@ The multiple-layers attention mechanism is available for version > 3.02.
 BN(Batch Normalization)
 #### training model:
 [see TrainModel](https://github.com/hchungdelta/Simple_NN_API/tree/master/NN_v3.0_SandGlass/ML/TrainModel)
-#### other:
-swapper: randomly exchange two input. (e.g. I am here. -> I here am.)
+
