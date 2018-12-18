@@ -18,7 +18,7 @@ The multiple-layers attention mechanism is available for version > 3.02.
 ## .py file:
 * **main.py**: training mode.
 * **infer.py**: infer mode.
-* **data_importer.py**: subsidiary code, for inputing dictionary, data, and some functions.
+* **random_gene.py.py**: generate random lists with random lengths.
 
 ## Update:
 #### layers: 
