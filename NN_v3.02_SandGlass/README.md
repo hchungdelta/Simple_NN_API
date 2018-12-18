@@ -17,9 +17,8 @@ The multiple-layers attention mechanism is available for version > 3.02.
 
 ## .py file:
 * **main.py**: training mode.
+* **infer.py**: infer mode.
 * **data_importer.py**: subsidiary code, for inputing dictionary, data, and some functions.
-## training data:
-* 30 and 1000 conversations from Southpark are restored in trainingdata/json for testing purpose. (notes that many swear words appear...) 
 
 ## Update:
 #### layers: 
