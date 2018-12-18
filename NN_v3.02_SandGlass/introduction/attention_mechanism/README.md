@@ -27,10 +27,11 @@ The result is intriguing. The following gif file shows the alpha of each attenti
  
 | Attention layer   |   scope  |            description   | 
 | :---:             |   :---:  |            :---:         | 
-| 1        |   1 word     |   analyzing input in character-based manner | 
-| 2 a      |   4 words    |   analyzing input in 4-character-based manner  |
-| 2 b      |   1 word     |  analyzing input in character-based manner (further amplify the difference) | 
-| 3        |    6 words   |  analyzing input on higher dimensions     | 
-| 4        |    9 words   |  analyzing input on highest dimensions     | 
+| 1        |   1 word     |   character-based    | 
+| 2 a      |   4 words    |   local corrlation  |
+| 2 b      |   1 word     |  character-based     | 
+| 3        |    6 words   |  sub-global corrlation  | 
+| 4        |    9 words   |  sub-global corrlation  | 
 
+In this case, attention layer 2a and attention layer 4, while attention layer 3 attributes a little.
 This model can implement attention mechanisms on different scopes (character-based, sub-sentence based ... etc), which is promising for analyzing the corpus. ( analyzing sentence structure on high-dimension attention layer, word-to-word translation on low-dimension attention layer.) 
