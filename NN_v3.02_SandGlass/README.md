@@ -16,7 +16,12 @@ The multiple-layers attention mechanism is available for version > 3.02.
 * (optional) mpi4py
 
 ## .py file:
-* **main.py**: training mode.
+* **main.py**: training mode for reverse input test.
+```
+for example,
+input = [1, 4, 5, 2, 0, 0]
+target = [0, 0, 2, 5, 4, 1]
+```
 * **infer.py**: infer mode.
 * **random_gene.py**: generate random lists with random lengths.
 
