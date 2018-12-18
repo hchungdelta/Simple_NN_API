@@ -1,7 +1,7 @@
 # Attention mechanism
-Based on paper [Attention Is All You Need](https://arxiv.org/abs/1706.03762)
+Based on the paper [Attention Is All You Need](https://arxiv.org/abs/1706.03762)
 
-Value-key attention model is used in this model. [see algorithm](https://github.com/hchungdelta/Simple_NN_API/tree/master/NN_v3.02_SandGlass/introduction/attention_mechanism/algorithm)
+Value-key attention model is implemented in this model. [see algorithm](https://github.com/hchungdelta/Simple_NN_API/tree/master/NN_v3.02_SandGlass/introduction/attention_mechanism/algorithm)
 / [see code](https://github.com/hchungdelta/Simple_NN_API/blob/master/NN_v3.02_SandGlass/ML/Layer/Attention.py)
 
 
