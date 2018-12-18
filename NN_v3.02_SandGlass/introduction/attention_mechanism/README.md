@@ -6,11 +6,13 @@ Value-key attention model is used in this model. [see algorithm](https://github.
 
 
 The original model is as following.
+
 <img src="https://github.com/hchungdelta/Simple_NN_API/blob/master/NN_v3.02_SandGlass/introduction/attention_mechanism/sandglass_base.gif" width="500">
 
 Attention can be added on each layer, in this case, 4 attention layers are added.
+
 <img src="https://github.com/hchungdelta/Simple_NN_API/blob/master/NN_v3.02_SandGlass/introduction/attention_mechanism/sandglass_attn.gif" width="500">
 
-
+For sanity check, target equals to reverse input.
 
 <img src="https://github.com/hchungdelta/Simple_NN_API/blob/master/NN_v3.02_SandGlass/introduction/attention_mechanism/attention_mechanism.gif" width="500">
