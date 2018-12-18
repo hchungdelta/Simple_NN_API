@@ -33,7 +33,7 @@ The result is intriguing. The following gif file shows the alpha of each attenti
 | 3        |    6 words   |  local corrlation attention  | 
 | 4        |    9 words   |  local corrlation attention  | 
 
-* **Attention layer 1**: analyzing the input in a character-based manner, one can see that the same input has the same attention tendency (such as number 5 and 23 in the above diagram)
+* **Attention layer 1**: analyzing the input in a character-based manner, one can see that the same input has the same attention tendency (such as input number 5 and 23 in the above diagram)
 * **Attention layer 2a**: analyzing the input considering local correlation (4 words-based), this layer works really well in this case, the diagram shows a clear one-to-one correspondence.
 * **Attention layer 2b**: Similar to attention layer 1, while it amplifies the difference between each character.
 * **Attention layer 3**: analyzing the input with a larger scope (6 words-based), however, in this case it is not necessary.
