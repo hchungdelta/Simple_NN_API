@@ -22,9 +22,10 @@ The model will show the information of the training neural network structure at 
 
 ## Update:
 #### layers: 
-5 different kinds of convolutional layers (see [introduction/equation](https://github.com/hchungdelta/Simple_NN_API/tree/master/NN_v3.0_SandGlass/introduction/equation))
-#### support activation: 
-GLU(Gated Linear Units), GTU(Gated Tanh Units)
+* 5 different kinds of convolutional layers (see [introduction/equation](https://github.com/hchungdelta/Simple_NN_API/tree/master/NN_v3.0_SandGlass/introduction/equation))
+
+* attention mechanism (see [introduction/attention_mechanism]
+
 #### normalization:
 BN(Batch Normalization)
 #### training model:
