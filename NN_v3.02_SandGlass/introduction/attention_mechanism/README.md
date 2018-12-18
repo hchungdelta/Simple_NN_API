@@ -9,10 +9,19 @@ The original model is as following.
 
 <img src="https://github.com/hchungdelta/Simple_NN_API/blob/master/NN_v3.02_SandGlass/introduction/attention_mechanism/sandglass_base.gif" width="500">
 
-Attention can be added on each layer, in this case, 4 attention layers are added.
+Attention can be added on each layer, in this case, 5 attention layers are added.
 
 <img src="https://github.com/hchungdelta/Simple_NN_API/blob/master/NN_v3.02_SandGlass/introduction/attention_mechanism/sandglass_attn.gif" width="500">
 
-For sanity check, target equals to reverse input.
+For a sanity check, I test whether the model can reverse the input as the target. For example,
+
+```
+input = [1, 4, 3, 2, 0, 0]
+target = [0, 0, 2, 3, 4, 1]
+```
+
+The result is intriguing. The following gif file shows the alpha of each attention layer.
 
 <img src="https://github.com/hchungdelta/Simple_NN_API/blob/master/NN_v3.02_SandGlass/introduction/attention_mechanism/attention_mechanism.gif" width="500">
+
+This model can implement attention mechanisms on different scopes (character-based, sub-sentence based ... etc), which is promising for analyzing the corpus. ( analyzing sentence structure on high-dimension attention layer, word-to-word translation on low-dimension attention layer.) 
