@@ -1,5 +1,5 @@
 ## Requirements:
-python 3.X
-numba
-jieba
-mpi4py (optional)
+* python 3.X
+* numba
+* jieba
+* mpi4py (optional)
