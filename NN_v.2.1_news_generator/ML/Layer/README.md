@@ -1,6 +1,6 @@
 # Description:
 * **CNN2CNN_layer.py**: Especially for SandGlass conv2conv model.
-* **conv2conv.py**: Especially for SandGlass conv2conv model.
+* **conv2conv.py**: conv2conv model, can be combined with LSTM seq2seq.
 * **Acti_layer.py**: Activation. (sigmoid, tanh ...)	
 * **CNN_layer.py**: Convolution neural network layers. 
 * **FCL_layer.py**: fully connected layers.
