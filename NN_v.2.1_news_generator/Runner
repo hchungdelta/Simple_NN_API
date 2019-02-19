@@ -13,13 +13,8 @@ alias python="python3"
 #export OMP_NUM_THREADS=4 
 #export I_MPI_PIN=disable
 echo 'This job started on: ' `date`
-#python -u  hello.py > logx
 
-mpirun  -np 4  python -u    main.py  >  NEWS3.log
-#python -u    main.py  >     CNN2CNN.log
-
-#/opt/intel/impi/2018.1.163/bin64/mpirun -np 4 python -u mpi.py > logxx
-
+mpirun  -np 4  python -u    main.py  >  NEWS.log
 
 echo '======================================================='
 echo "Job Ended at `date`"
