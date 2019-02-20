@@ -13,3 +13,4 @@
 [The whole code (including trained data) are available here(google drive)](https://drive.google.com/drive/folders/1UxDSeKn1cvO1OeItSJEmSWwnCaNhvB8t?usp=sharing)
 
 
+<img src="https://github.com/hchungdelta/Simple_NN_API/blob/master/NN_v.2.1_news_generator/" width="500">
