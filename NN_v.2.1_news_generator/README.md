@@ -10,7 +10,7 @@
 * **test_model.py**: Test the model. This is an interactive mode, just input the headline and then the model can generate the content in time. It might costs a few minutes. 
 * **data_importer.py**: To input the training data.
 
-[The whole code (including trained data) are available here(google drive)](https://drive.google.com/drive/folders/1UxDSeKn1cvO1OeItSJEmSWwnCaNhvB8t?usp=sharing)
+[The whole code (including trained model) are available here(google drive)](https://drive.google.com/drive/folders/1UxDSeKn1cvO1OeItSJEmSWwnCaNhvB8t?usp=sharing)
 
 The details of this model are described in **News_generator_paper.pdf**
 
