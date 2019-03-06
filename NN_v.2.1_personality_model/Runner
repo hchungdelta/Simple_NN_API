@@ -1,0 +1,23 @@
+#!/bin/bash
+#PBS -N ran                                
+#PBS -o out
+#PBS -e err
+#PBS -q mem192 
+#PBS -l nodes=1:ppn=8     
+cd $PBS_O_WORKDIR
+echo '======================================================='
+echo "Starting on `hostname` at `date`"
+echo Working directory is $PBS_O_WORKDIR
+
+alias python="python3"
+#export OMP_NUM_THREADS=4 
+#export I_MPI_PIN=disable
+echo 'This job started on: ' `date`
+
+
+mpirun  -np 8  python -u    seq2seq.py  > SIS.log
+
+
+echo '======================================================='
+echo "Job Ended at `date`"
+echo '======================================================='
